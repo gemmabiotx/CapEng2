@@ -79,5 +79,18 @@ Output files written to ***/HPC/InternalData/analysis/pipeline/CapEng2/output/20
 - ***joint_inframe_count.txt***: tab-delimited text file with same columns as input files, after rows/peptides were filtered.
 - ***filtered_read_per_peptide.rds***: a 2-column data.frame of peptides grouped by number of reads per peptides (column 1) and the number of peptides in each group (column 2) 
 
+### freq.r
+
+Extra script to summarize oligo and peptide frequency
+
+```
+## Example
+> spack load r@4.4.1
+> cd /HPC/InternalData/analysis/pipeline/CapEng2/source/extra
+> Rscript freq.r # Parameters hard-coded in script
+```
+
+
+
 
 
