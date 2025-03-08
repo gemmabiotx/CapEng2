@@ -35,20 +35,33 @@ Files in the output directory:
 
 ### digest.r/digest.Rmd
 
-Extra script and Rmarkdown template to summarize oligo and peptide sequences in the joint read count table
+Extra script and Rmarkdown template to summarize oligo and peptide sequences in the joint read count table, such as oligo length and base frequencies at positions in oligos and peptides.
 
 ```
 ## Example
 > /HPC/InternalData/analysis/pipeline/CapEng2/source/extra
-> sh ex_digest.sh ## details of an example run in this file
+> sh ex_digest.sh ## details of an example run given in this file
 ```
 
 Output files written to ***/HPC/InternalData/analysis/pipeline/CapEng2/output/20250307_C974mini/batch/result/digest***:
 
-- ***joint_inframe_count.txt***: tab-delimited text file with same columns as input files, after rows/peptides were filtered.
-- ***filtered_read_per_peptide.rds***: a 2-column data.frame of peptides grouped by number of reads per peptides (column 1) and the number of peptides in each group (column 2) 
+- ***index.html***: a summary report of the analysis
+- stats tables in the report
+- plots in the report
 
+### nonsense.r/nonsense.Rmd
 
+Extra script and Rmarkdown template to have a deeper look at the frequency and position of stop codons, or codons of other amino acids, such as Cystein
+
+```
+## Example
+> /HPC/InternalData/analysis/pipeline/CapEng2/source/extra
+> sh ex_nonsense.sh ## details of an example run given in this file
+```
+
+Output files written to ***/HPC/InternalData/analysis/pipeline/CapEng2/output/20250307_C974mini/batch/result/nonsense*** and ***/HPC/InternalData/analysis/pipeline/CapEng2/output/20250307_C974mini/batch/result/cystein***:
+
+- ***index.html***: a summary report of the analysis
 
 
 ### filter.r
@@ -58,7 +71,7 @@ Extra script filter oligos to remove those including unexpected codons, such as 
 ```
 ## Example
 > /HPC/InternalData/analysis/pipeline/CapEng2/source/extra
-> sh ex_filter.sh ## details of an example run in this file
+> sh ex_filter.sh ## details of an example run given in this file
 ```
 
 Output files written to ***/HPC/InternalData/analysis/pipeline/CapEng2/output/20250307_C974mini/batch/result/filter***:
