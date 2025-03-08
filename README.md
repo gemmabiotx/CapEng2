@@ -62,7 +62,7 @@ Extra script and Rmarkdown template to have a deeper look at the frequency and p
 Output files written to ***/HPC/InternalData/analysis/pipeline/CapEng2/output/20250307_C974mini/batch/result/nonsense*** and ***/HPC/InternalData/analysis/pipeline/CapEng2/output/20250307_C974mini/batch/result/cystein***:
 
 - ***index.html***: a summary report of the analysis
-
+- ***nonsense_stats.rds***: summary stats of the nonsense codons
 
 ### filter.r
 
