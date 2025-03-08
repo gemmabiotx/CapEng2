@@ -90,7 +90,33 @@ Extra script to summarize oligo and peptide frequency
 > Rscript freq.r # Parameters hard-coded in script
 ```
 
+Output files written to ***/HPC/InternalData/analysis/pipeline/CapEng2/output/20250307_C974mini/batch/result/frequency***:
 
+### 2mer.r
+
+Extra script to summarize 2-AA combinations.
+
+```
+## Example
+> spack load r@4.4.1
+> cd /HPC/InternalData/analysis/pipeline/CapEng2/source/extra
+> Rscript 2mer.r # Parameters hard-coded in script
+```
+
+Output files written to ***/HPC/InternalData/analysis/pipeline/CapEng2/output/20250307_C974mini/batch/result/2mer***:
+
+### mismatch.r
+
+Extra script to summarize oligos having 1 base mismatch to the top oligos with the highest read counts
+
+```
+## Example
+> spack load r@4.4.1
+> cd /HPC/InternalData/analysis/pipeline/CapEng2/source/extra
+> Rscript mismatch.r # Parameters hard-coded in script
+```
+
+Output files written to ***/HPC/InternalData/analysis/pipeline/CapEng2/output/20250307_C974mini/batch/result/2mer***:
 
 
 
